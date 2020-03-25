@@ -20,11 +20,16 @@
     />
     <!-- /Google fonts -->
     <!-- jQuery 1.8 or later, 33 KB -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+          
+        </script>
 
-    <!-- Fotorama from CDNJS, 19 KB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <!-- pgwslider -->
+    <!-- <link href="./css/pgwslider.css" rel="stylesheet" />
+    <script src="./js/pgwslider.js"></script> -->
 
     <title>CUDA | Web Development Team</title>
   </head>
@@ -35,7 +40,7 @@
         <nav class="nav">
           <div class="nav__left">
             <a class="logo" href="">
-              <img src="../img/logos/logo.png" alt="Logo" class="logo__img" />
+              <img src="./img/logos/logo.png" alt="Logo" class="logo__img" />
             </a>
           </div>
           <div class="nav__right">
@@ -89,25 +94,25 @@
             <ul class="side-nav__dropdown">
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   Арахис
                 </a>
               </li>
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   Арахис
                 </a>
               </li>
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   Арахис
                 </a>
               </li>
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   Арахис
                 </a>
               </li>
@@ -120,25 +125,25 @@
             <ul class="side-nav__dropdown">
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   <span>Арахис</span>
                 </a>
               </li>
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   <span>Арахис</span>
                 </a>
               </li>
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   <span>Арахис</span>
                 </a>
               </li>
               <li class="side-nav__dropdown-item">
                 <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
-                  <img src="../img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
                   <span>Арахис</span>
                 </a>
               </li>
@@ -189,13 +194,13 @@
         <div class="products catalog__content">
           <ul class="pgwSlider">
             <li>
-              <img src="../img/fotorama/1.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" />
+              <img src="./img/fotorama/1.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" />
             </li>
-            <li><img src="../img/fotorama/2.jpg" alt="Montréal, QC, Canada" /></li>
+            <li><img src="./img/fotorama/2.jpg" alt="Montréal, QC, Canada" /></li>
 
             <li>
               <a href="http://www.nyc.gov" target="_blank">
-                <img src="../img/fotorama/3.jpg" />
+                <img src="./img/fotorama/3.jpg" />
                 <span>New York, NY, USA</span>
               </a>
             </li>
@@ -345,20 +350,7 @@
         </div>
       </div>
     </section>
-    <script>
-      $(document).ready(function() {
-        $(".pgwSlider").pgwSlider({
-          maxHeight: 400,
-          displayControls: true,
-          touchControls: true,
-          transitionEffect: "sliding",
-          autoSlide: false,
-          displayList: true,
-          adaptiveHeight: true,
-          verticalCentering: true
-        });
-      });
-    </script>
+    
     <!-- <section class="features features__my-bottom">
 	<div class="container">
 
@@ -689,5 +681,20 @@
 		
     </footer> -->
     <script src="js/bundle.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".pgwSlider").pgwSlider({
+          maxHeight: 400,
+          displayControls: true,
+          touchControls: true,
+          transitionEffect: "sliding",
+          autoSlide: false,
+          displayList: true,
+          adaptiveHeight: true,
+          verticalCentering: true
+        });
+      });
+
+    </script>
   </body>
 </html>
